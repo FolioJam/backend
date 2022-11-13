@@ -1,10 +1,14 @@
 const fastify = require('fastify')({logger: true});
-const PORT = 8080;
 
+const dotenv = require("dotenv");
+
+dotenv.config();
+const PORT = process.env.PORT;
 
 fastify.get('/', (req, res) => {
     res.send({message: `Hello, this is a GET route @FolioJam's backend`});
 })
+
 
 const start = async () => {
     try {

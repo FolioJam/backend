@@ -19,8 +19,12 @@
   },
   "homepage": "https://github.com/FolioJam/Server#readme",
   "dependencies": {
+    "@fastify/mongodb": "^6.1.0",
+    "dotenv": "^16.0.3",
     "fastify": "^4.9.2",
+    "fastify-mongodb": "^4.2.0",
     "fastify-swagger": "^5.2.0",
+    "mongodb": "^4.11.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
